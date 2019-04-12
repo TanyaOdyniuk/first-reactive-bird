@@ -1,0 +1,10 @@
+postgres:
+      image: postgres:10.3
+      ports:
+        - 5432:5432
+#      restart: always
+      environment:
+        - POSTGRES_PASSWORD=password
+        - POSTGRES_USER=postgres
+        - POSTGRES_DB=postgres
+        - PGDATA=/var/lib/postgresql/data
